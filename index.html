@@ -1,0 +1,558 @@
+<!doctype html>
+<html>
+   <head>
+      <title>hi</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="assets/pfp.png" type="image/x-icon">
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet">
+      <!-- AOS CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+      <!-- AOS JavaScript -->
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+      <style>
+         /* Apply Poppins font to the entire document */
+         body {
+         font-family: 'Poppins', sans-serif;
+         }
+      </style>
+   </head>
+   <body>
+      <nav style="background-color: #151617;">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+         <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+               <!-- Mobile menu button-->
+               <button type="button"
+                  class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                  aria-controls="mobile-menu" aria-expanded="false">
+                  <span class="absolute -inset-0.5"></span>
+                  <span class="sr-only">Open main menu</span>
+                  <!--
+                     Icon when menu is closed.
+
+                     Menu open: "hidden", Menu closed: "block"
+                     -->
+                  <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                     aria-hidden="true" data-slot="icon">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  <!--
+                     Icon when menu is open.
+
+                     Menu open: "block", Menu closed: "hidden"
+                     -->
+                  <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                     aria-hidden="true" data-slot="icon">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>
+               </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+               <div class="flex shrink-0 items-center">
+                  <img class=" h-4 w-auto"
+                     src="../assets/logo.webp"
+                     alt="">
+               </div>
+               <div class="hidden sm:ml-6 sm:block">
+                  <div class="flex space-x-4">
+                  </div>
+               </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            </div>
+            <div class="relative ml-3">
+               <div>
+                  <img class="size-8 rounded-full"
+                     src="https://cdn.discordapp.com/avatars/1321954368148475974/4823999d94e9ba7cbeea02c77915aaba.png?size=1024"
+                     alt="">
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="relative bg-[#121212] isolate pt-14">
+         <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
+            <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
+               <div class="flex">
+               </div>
+               <h1 class="mt-10 max-w-lg text-4xl font-bold tracking-tight text-white sm:text-6xl" data-aos="fade-up"
+                  data-aos-duration="500" data-aos-delay="100">Let me handle your system administration.</h1>
+               <p class="mt-6 text-lg leading-8 text-gray-200" data-aos="fade-up" data-aos-duration="700"
+                  data-aos-delay="100">Making server ownership easier with expert management and great features. Start for
+                  free.
+               </p>
+               <div class="mt-10 flex items-center gap-x-1">
+                  <a href="https://discord.gg/FYxpAqW4Um" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100"
+                     class="rounded-l-3xl bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 transition focus-visible:outline-white flex items-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="h-5 w-5 mr-1">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                           d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z">
+                        </path>
+                     </svg>
+                     Get started
+                  </a>
+                  <a href="https://discord.gg/FYxpAqW4Um" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100"
+                     class="flex items-center rounded-r-3xl bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 transition focus-visible:outline-white">
+                     <!-- SVG Icon -->
+                     <svg viewBox="0 0 256 199" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid" class="mr-2">
+                        <path
+                           d="M216.856 16.597A208.502 208.502 0 0 0 164.042 0c-2.275 4.113-4.933 9.645-6.766 14.046-19.692-2.961-39.203-2.961-58.533 0-1.832-4.4-4.55-9.933-6.846-14.046a207.809 207.809 0 0 0-52.855 16.638C5.618 67.147-3.443 116.4 1.087 164.956c22.169 16.555 43.653 26.612 64.775 33.193A161.094 161.094 0 0 0 79.735 175.3a136.413 136.413 0 0 1-21.846-10.632 108.636 108.636 0 0 0 5.356-4.237c42.122 19.702 87.89 19.702 129.51 0a131.66 131.66 0 0 0 5.355 4.237 136.07 136.07 0 0 1-21.886 10.653c4.006 8.02 8.638 15.67 13.873 22.848 21.142-6.58 42.646-16.637 64.815-33.213 5.316-56.288-9.08-105.09-38.056-148.36ZM85.474 135.095c-12.645 0-23.015-11.805-23.015-26.18s10.149-26.2 23.015-26.2c12.867 0 23.236 11.804 23.015 26.2.02 14.375-10.148 26.18-23.015 26.18Zm85.051 0c-12.645 0-23.014-11.805-23.014-26.18s10.148-26.2 23.014-26.2c12.867 0 23.236 11.804 23.015 26.2 0 14.375-10.148 26.18-23.015 26.18Z"
+                           fill="#5865F2"></path>
+                     </svg>
+                     Join Discord
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      </div>
+      <footer class="bg-[#121212]" aria-labelledby="footer-heading">
+         <h2 id="footer-heading" class="sr-only">Footer</h2>
+         <div class="mx-auto max-w-7xl px-6 pb-8 pt-12 sm:pt-24 lg:px-8 lg:pt-32">
+            <div class=" py-24 sm:py-32">
+               <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                  <div class="mx-auto max-w-2xl lg:mx-0">
+                     <h2 class="text-base font-semibold leading-7 text-indigo-400" data-aos="fade-up" data-aos-duration="400"
+                        data-aos-delay="100">Pricing</h2>
+                     <p class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl" data-aos="fade-up"
+                        data-aos-duration="450" data-aos-delay="100">Plans packed with features for less</p>
+                  </div>
+                  <p class="mx-auto mt-6 max-w-7xl  text-left text-lg leading-8 text-gray-300 " data-aos="fade-up"
+                     data-aos-duration="500" data-aos-delay="100">Choose an affordable plan that fits your needs and package
+                     requirements.
+                  </p>
+                  <div class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                     <div class="rounded-3xl p-8 xl:p-10 ring-1 ring-white/10" data-aos="fade-up" data-aos-duration="600"
+                        data-aos-delay="100">
+                        <div class="flex items-center justify-between gap-x-4">
+                           <h3 id="tier-free" class="text-lg font-semibold leading-8 text-white">Lite</h3>
+                        </div>
+                        <p class="mt-4 text-sm leading-6 text-gray-300">Reliable support and expert assistance to keep your
+                           server running smoothly.
+                        </p>
+                        <p class="mt-6 flex items-baseline gap-x-1">
+                           <!-- Price, update based on frequency toggle state -->
+                           <span class="text-4xl font-bold tracking-tight text-white">Free</span>
+                        </p>
+                        <a href="https://discord.gg/FYxpAqW4Um" aria-describedby="tier-free"
+                           class="mt-6 block rounded-3xl py-2 transition px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white">Get
+                        for free</a>
+                        <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-300 xl:mt-10">
+                           <li class="flex gap-x-3">
+                              <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor"
+                                 aria-hidden="true">
+                                 <path fill-rule="evenodd"
+                                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                              Basic Support
+                           </li>
+                           <li class="flex gap-x-3">
+                              <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor"
+                                 aria-hidden="true">
+                                 <path fill-rule="evenodd"
+                                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                              Software Installations
+                           </li>
+                           <li class="flex gap-x-3">
+                              <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor"
+                                 aria-hidden="true">
+                                 <path fill-rule="evenodd"
+                                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                              Basic DDoS Protection
+                           </li>
+                           <li class="flex gap-x-3">
+                              <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor"
+                                 aria-hidden="true">
+                                 <path fill-rule="evenodd"
+                                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                              Remote Monitoring
+                           </li>
+                           <li class="flex gap-x-3">
+                              <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor"
+                                 aria-hidden="true">
+                                 <path fill-rule="evenodd"
+                                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                              Basic System Administration
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="rounded-3xl p-8 xl:p-10 bg-white/5 ring-2 ring-indigo-500" data-aos="fade-up"
+                        data-aos-duration="700" data-aos-delay="100">
+                        <div class="flex items-center justify-between gap-x-4 ">
+                           <h3 id="tier-startup" class="text-lg font-semibold leading-8 text-white">Pro</h3>
+                           <p class="rounded-full bg-indigo-500 px-2.5 py-1 text-xs font-semibold leading-5 text-white">Most
+                              popular
+                           </p>
+                        </div>
+                        <p class="mt-4 text-sm leading-6 text-gray-300">For servers with high traffic, a large player base, and
+                           continued growth.
+                        </p>
+                        <p class="mt-6 flex items-baseline gap-x-1">
+                           <!-- Price, update based on frequency toggle state -->
+                           <span class="text-4xl font-bold tracking-tight text-white">$30</span>
+                           <!-- Payment frequency, update based on frequency toggle state -->
+                           <span class="text-sm font-semibold leading-6 text-gray-300">/month</span>
+                        </p>
+                        <a href="https://discord.gg/FYxpAqW4Um" aria-describedby="tier-startup"
+                           class="mt-6 block rounded-3xl transition py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500">Purchase
+                        plan</a>
+                        <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-300 xl:mt-10">
+                           <li class="flex gap-x-3">
+                              <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor"
+                                 aria-hidden="true">
+                                 <path fill-rule="evenodd"
+                                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                              Premium Support
+                           </li>
+                           <li class="flex gap-x-3">
+                              <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor"
+                                 aria-hidden="true">
+                                 <path fill-rule="evenodd"
+                                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                              All Features from Lite plan
+                           </li>
+                           <li class="flex gap-x-3">
+                              <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor"
+                                 aria-hidden="true">
+                                 <path fill-rule="evenodd"
+                                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                              DDoS Protection
+                           </li>
+                           <li class="flex gap-x-3">
+                              <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor"
+                                 aria-hidden="true">
+                                 <path fill-rule="evenodd"
+                                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                              Unlimited Backups & Databases
+                           </li>
+                           <li class="flex gap-x-3">
+                              <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor"
+                                 aria-hidden="true">
+                                 <path fill-rule="evenodd"
+                                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                              Minecraft Configuration
+                           </li>
+                           <li class="flex gap-x-3">
+                              <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor"
+                                 aria-hidden="true">
+                                 <path fill-rule="evenodd"
+                                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                              System Administration
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="rounded-3xl p-8 xl:p-10 ring-1 ring-white/10" data-aos="fade-up" data-aos-duration="800"
+                        data-aos-delay="100">
+                        <div class="flex items-center justify-between gap-x-4">
+                           <h3 id="tier-enterprise" class="text-lg font-semibold leading-8 text-white">Enterprise</h3>
+                        </div>
+                        <p class="mt-4 text-sm leading-6 text-gray-300">Dedicated support and infrastructure for your server.
+                        </p>
+                        <p class="mt-6 flex items-baseline gap-x-1">
+                           <!-- Price, update based on frequency toggle state -->
+                           <span class="text-4xl font-bold tracking-tight text-white">$50</span>
+                           <!-- Payment frequency, update based on frequency toggle state -->
+                           <span class="text-sm font-semibold leading-6 text-gray-300">/month</span>
+                        </p>
+                        <a href="https://discord.gg/FYxpAqW4Um" aria-describedby="tier-enterprise"
+                           class="mt-6 block rounded-3xl transition py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white">Purchase
+                        plan</a>
+                        <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-300 xl:mt-10">
+                           <li class="flex gap-x-3">
+                              <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor"
+                                 aria-hidden="true">
+                                 <path fill-rule="evenodd"
+                                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                              Advanced DDoS Protection
+                           </li>
+                           <li class="flex gap-x-3">
+                              <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor"
+                                 aria-hidden="true">
+                                 <path fill-rule="evenodd"
+                                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                              All Features from Pro plan
+                           </li>
+                           <li class="flex gap-x-3">
+                              <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor"
+                                 aria-hidden="true">
+                                 <path fill-rule="evenodd"
+                                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                              Website Development
+                           </li>
+                           <li class="flex gap-x-3">
+                              <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor"
+                                 aria-hidden="true">
+                                 <path fill-rule="evenodd"
+                                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                              Custom Plugin Development
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class=" py-12 sm:py-6">
+               <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                  <div class="mx-auto max-w-2xl lg:mx-0">
+                     <h2 class="text-base font-semibold leading-7 text-indigo-400" data-aos="fade-up" data-aos-duration="400"
+                        data-aos-delay="100">Features</h2>
+                     <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl" data-aos="fade-up"
+                        data-aos-duration="450" data-aos-delay="100">Leave the system side to us </h2>
+                     <p class="mt-6 text-lg leading-8 text-gray-300" data-aos="fade-up" data-aos-duration="450"
+                        data-aos-delay="100">– we've got it covered.</p>
+                  </div>
+                  <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-16 lg:max-w-none">
+                     <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+                        <div class="flex flex-col" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                           <dt class="text-base font-semibold leading-7 text-white flex items-center space-x-4">
+                              <div class="flex h-10 w-10 items-center justify-center rounded-3xl bg-[#181818]">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                    stroke="currentColor" class="size-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                       d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                 </svg>
+                              </div>
+                              <span>Remote Monitoring</span>
+                           </dt>
+                           <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
+                              <p class="flex-auto">With tools that confirm uptime and ensure everything runs as expected, any
+                                 issues are instantly reported to us for quick investigation.
+                              </p>
+                           </dd>
+                        </div>
+                        <div class="flex flex-col" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                           <dt class="text-base font-semibold leading-7 text-white flex items-center space-x-4">
+                              <div class="flex h-10 w-10 items-center justify-center rounded-3xl bg-[#181818]">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                    stroke="currentColor" class="size-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                       d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                 </svg>
+                              </div>
+                              <span>Enterprise Security</span>
+                           </dt>
+                           <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
+                              <p class="flex-auto">Protecting your systems is our top priority. With advanced tools and robust
+                                 DDoS protection, we ensure your systems stay secure and resilient against any disruptions.
+                              </p>
+                           </dd>
+                        </div>
+                        <div class="flex flex-col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                           <dt class="text-base font-semibold leading-7 text-white flex items-center space-x-4">
+                              <div class="flex h-10 w-10 items-center justify-center rounded-3xl bg-[#181818]">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                    stroke="currentColor" class="size-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                       d="M15.666 3.888A2.25 2.25 0 0 0 13.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 0 1-.75.75H9a.75.75 0 0 1-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 0 1-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 0 1 1.927-.184" />
+                                 </svg>
+                              </div>
+                              <span>Logging</span>
+                           </dt>
+                           <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
+                              <p class="flex-auto">We log every activity on your systems to ensure everything is running smoothly
+                                 and operational.
+                              </p>
+                           </dd>
+                        </div>
+                        <div class="flex flex-col" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+                           <dt class="text-base font-semibold leading-7 text-white flex items-center space-x-4">
+                              <div class="flex h-10 w-10 items-center justify-center rounded-3xl bg-[#181818]">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="size-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                       d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288" />
+                                 </svg>
+                              </div>
+                              <span>Dedicated Support</span>
+                           </dt>
+                           <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
+                              <p class="flex-auto">We offer exceptional assistance for your Minecraft server, always ready to help
+                                 whenever you need us
+                              </p>
+                           </dd>
+                        </div>
+                        <div class="flex flex-col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                           <dt class="text-base font-semibold leading-7 text-white flex items-center space-x-4">
+                              <div class="flex h-10 w-10 items-center justify-center rounded-3xl bg-[#181818]">
+                                 <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                       d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z" />
+                                 </svg>
+                              </div>
+                              <span>Unlimited Backups</span>
+                           </dt>
+                           <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
+                              <p class="flex-auto">Enjoy unlimited backups, securely stored in our dedicated storage, freeing up
+                                 space on your game server.
+                              </p>
+                           </dd>
+                        </div>
+                        <div class="flex flex-col" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100">
+                           <dt class="text-base font-semibold leading-7 text-white flex items-center space-x-4">
+                              <span class="flex-shrink-0">And much more</span>
+                           </dt>
+                           <dd class="mt-1 text-base leading-7 text-gray-300">
+                              <p>We offer a wide range of services. Reach out to us on our Discord server, and we'll be happy to
+                                 assist you with whatever you need.
+                              </p>
+                           </dd>
+                           <p class="mt-6">
+                              <a href="https://discord.gg/FYxpAqW4Um"
+                                 class="flex items-center rounded-3xl bg-[#181818] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#181818]/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 transition focus-visible:outline-white w-[40%]">
+                                 <!-- SVG Icon -->
+                                 <svg viewBox="0 0 256 199" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                                    preserveAspectRatio="xMidYMid" class="mr-2">
+                                    <path
+                                       d="M216.856 16.597A208.502 208.502 0 0 0 164.042 0c-2.275 4.113-4.933 9.645-6.766 14.046-19.692-2.961-39.203-2.961-58.533 0-1.832-4.4-4.55-9.933-6.846-14.046a207.809 207.809 0 0 0-52.855 16.638C5.618 67.147-3.443 116.4 1.087 164.956c22.169 16.555 43.653 26.612 64.775 33.193A161.094 161.094 0 0 0 79.735 175.3a136.413 136.413 0 0 1-21.846-10.632 108.636 108.636 0 0 0 5.356-4.237c42.122 19.702 87.89 19.702 129.51 0a131.66 131.66 0 0 0 5.355 4.237 136.07 136.07 0 0 1-21.886 10.653c4.006 8.02 8.638 15.67 13.873 22.848 21.142-6.58 42.646-16.637 64.815-33.213 5.316-56.288-9.08-105.09-38.056-148.36ZM85.474 135.095c-12.645 0-23.015-11.805-23.015-26.18s10.149-26.2 23.015-26.2c12.867 0 23.236 11.804 23.015 26.2.02 14.375-10.148 26.18-23.015 26.18Zm85.051 0c-12.645 0-23.014-11.805-23.014-26.18s10.148-26.2 23.014-26.2c12.867 0 23.236 11.804 23.015 26.2 0 14.375-10.148 26.18-23.015 26.18Z"
+                                       fill="#5865F2"></path>
+                                 </svg>
+                                 Join Discord
+                              </a>
+                           </p>
+                        </div>
+                     </dl>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-12 lg:px-8" data-aos="fade-up" data-aos-duration="800"
+                  data-aos-delay="100">
+                  <div
+                     class="relative isolate overflow-hidden bg-[#141414] px-6 pt-16 rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+                     <svg viewBox="0 0 1024 1024"
+                        class="absolute left-1/2 top-1/2 -z-10 size-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
+                        aria-hidden="true">
+                        <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
+                           fill-opacity="0.7" />
+                        <defs>
+                           <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+                              <stop stop-color="#aaa9f0" />
+                              <stop offset="1" stop-color="#7c7bcc" />
+                           </radialGradient>
+                        </defs>
+                     </svg>
+                     <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+                        <h2 class="text-balanc text-3xl font-semibold tracking-tight text-white sm:text-4xl">Level up your
+                           Minecraft server with ease
+                        </h2>
+                        <p class="mt-6 text-pretty text-lg/8 text-gray-300">– expert management at your service, whenever you
+                           need it.
+                        </p>
+                        <div class="mt-10 flex items-center justify-center gap-x-1 lg:justify-start">
+                           <a href="https://discord.gg/FYxpAqW4Um"
+                              class="rounded-l-3xl bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 transition focus-visible:outline-white flex items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                 stroke="currentColor" class="h-5 w-5 mr-1">
+                                 <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                              </svg>
+                              Get started
+                           </a>
+                           <a href="https://discord.gg/FYxpAqW4Um"
+                              class="flex items-center rounded-r-3xl bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 transition focus-visible:outline-white">
+                              <!-- SVG Icon -->
+                              <svg viewBox="0 0 256 199" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid" class="mr-2">
+                                 <path
+                                    d="M216.856 16.597A208.502 208.502 0 0 0 164.042 0c-2.275 4.113-4.933 9.645-6.766 14.046-19.692-2.961-39.203-2.961-58.533 0-1.832-4.4-4.55-9.933-6.846-14.046a207.809 207.809 0 0 0-52.855 16.638C5.618 67.147-3.443 116.4 1.087 164.956c22.169 16.555 43.653 26.612 64.775 33.193A161.094 161.094 0 0 0 79.735 175.3a136.413 136.413 0 0 1-21.846-10.632 108.636 108.636 0 0 0 5.356-4.237c42.122 19.702 87.89 19.702 129.51 0a131.66 131.66 0 0 0 5.355 4.237 136.07 136.07 0 0 1-21.886 10.653c4.006 8.02 8.638 15.67 13.873 22.848 21.142-6.58 42.646-16.637 64.815-33.213 5.316-56.288-9.08-105.09-38.056-148.36ZM85.474 135.095c-12.645 0-23.015-11.805-23.015-26.18s10.149-26.2 23.015-26.2c12.867 0 23.236 11.804 23.015 26.2.02 14.375-10.148 26.18-23.015 26.18Zm85.051 0c-12.645 0-23.014-11.805-23.014-26.18s10.148-26.2 23.014-26.2c12.867 0 23.236 11.804 23.015 26.2 0 14.375-10.148 26.18-23.015 26.18Z"
+                                    fill="#5865F2" />
+                              </svg>
+                              Join Discord
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="mt-16 border-t border-white/10 pt-8 sm:mt-3 lg:mt-3">
+               <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                  <div class="space-y-8">
+                     <img class="h-12"
+                        src="../assets/banner.webp"
+                        alt="Company name">
+                     <p class="text-sm leading-6 text-gray-300">Making server ownership effortless with expert management at
+                        your service.
+                     </p>
+                     <div class="flex space-x-6">
+                        <a href="https://discord.gg/FYxpAqW4Um" class="text-gray-500 hover:text-gray-400">
+                           <span class="sr-only">Discord</span>
+                           <svg viewBox="0 0 256 199" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                              preserveAspectRatio="xMidYMid">
+                              <path
+                                 d="M216.856 16.597A208.502 208.502 0 0 0 164.042 0c-2.275 4.113-4.933 9.645-6.766 14.046-19.692-2.961-39.203-2.961-58.533 0-1.832-4.4-4.55-9.933-6.846-14.046a207.809 207.809 0 0 0-52.855 16.638C5.618 67.147-3.443 116.4 1.087 164.956c22.169 16.555 43.653 26.612 64.775 33.193A161.094 161.094 0 0 0 79.735 175.3a136.413 136.413 0 0 1-21.846-10.632 108.636 108.636 0 0 0 5.356-4.237c42.122 19.702 87.89 19.702 129.51 0a131.66 131.66 0 0 0 5.355 4.237 136.07 136.07 0 0 1-21.886 10.653c4.006 8.02 8.638 15.67 13.873 22.848 21.142-6.58 42.646-16.637 64.815-33.213 5.316-56.288-9.08-105.09-38.056-148.36ZM85.474 135.095c-12.645 0-23.015-11.805-23.015-26.18s10.149-26.2 23.015-26.2c12.867 0 23.236 11.804 23.015 26.2.02 14.375-10.148 26.18-23.015 26.18Zm85.051 0c-12.645 0-23.014-11.805-23.014-26.18s10.148-26.2 23.014-26.2c12.867 0 23.236 11.804 23.015 26.2 0 14.375-10.148 26.18-23.015 26.18Z"
+                                 fill="#5865F2" />
+                           </svg>
+                        </a>
+                        </a>
+                        <a href="https://github.com/m114st" class="text-gray-500 hover:text-gray-400">
+                           <span class="sr-only">GitHub</span>
+                           <svg viewBox="0 0 256 250" class="w-6 h-6" fill="#fff" xmlns="http://www.w3.org/2000/svg"
+                              preserveAspectRatio="xMidYMid">
+                              <path
+                                 d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46 6.397 1.185 8.746-2.777 8.746-6.158 0-3.052-.12-13.135-.174-23.83-35.61 7.742-43.124-15.103-43.124-15.103-5.823-14.795-14.213-18.73-14.213-18.73-11.613-7.944.876-7.78.876-7.78 12.853.902 19.621 13.19 19.621 13.19 11.417 19.568 29.945 13.911 37.249 10.64 1.149-8.272 4.466-13.92 8.127-17.116-28.431-3.236-58.318-14.212-58.318-63.258 0-13.975 5-25.394 13.188-34.358-1.329-3.224-5.71-16.242 1.24-33.874 0 0 10.749-3.44 35.21 13.121 10.21-2.836 21.16-4.258 32.038-4.307 10.878.049 21.837 1.47 32.066 4.307 24.431-16.56 35.165-13.12 35.165-13.12 6.967 17.63 2.584 30.65 1.255 33.873 8.207 8.964 13.173 20.383 13.173 34.358 0 49.163-29.944 59.988-58.447 63.157 4.591 3.972 8.682 11.762 8.682 23.704 0 17.126-.148 30.91-.148 35.126 0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002 256 57.307 198.691 0 128.001 0Zm-80.06 182.34c-.282.636-1.283.827-2.194.39-.929-.417-1.45-1.284-1.15-1.922.276-.655 1.279-.838 2.205-.399.93.418 1.46 1.293 1.139 1.931Zm6.296 5.618c-.61.566-1.804.303-2.614-.591-.837-.892-.994-2.086-.375-2.66.63-.566 1.787-.301 2.626.591.838.903 1 2.088.363 2.66Zm4.32 7.188c-.785.545-2.067.034-2.86-1.104-.784-1.138-.784-2.503.017-3.05.795-.547 2.058-.055 2.861 1.075.782 1.157.782 2.522-.019 3.08Zm7.304 8.325c-.701.774-2.196.566-3.29-.49-1.119-1.032-1.43-2.496-.726-3.27.71-.776 2.213-.558 3.315.49 1.11 1.03 1.45 2.505.701 3.27Zm9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033-1.448-.439-2.395-1.613-2.103-2.626.301-1.01 1.747-1.484 3.207-1.028 1.446.436 2.396 1.602 2.095 2.622Zm10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95-1.53.034-2.769-.82-2.786-1.86 0-1.065 1.202-1.932 2.733-1.958 1.522-.03 2.768.818 2.768 1.868Zm10.555-.405c.182 1.03-.875 2.088-2.387 2.37-1.485.271-2.861-.365-3.05-1.386-.184-1.056.893-2.114 2.376-2.387 1.514-.263 2.868.356 3.061 1.403Z" />
+                           </svg>
+                        </a>
+                        </a>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+                     <div class="md:grid md:grid-cols-2 md:gap-1">
+                        <div>
+                        </div>
+                     </div>
+                     <div class="md:grid md:grid-cols-2 md:gap-8">
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+               <p class="text-xs leading-5 text-gray-400">&copy; 2025 Amir Kadir Services Sweden. All rights reserved.</p>
+            </div>
+         </div>
+      </footer>
+      <script>
+         AOS.init();
+      </script>
+   </body>
+</html>
